@@ -25,7 +25,7 @@ class TelaInicial extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                'FitLife',
+                "FitLife",
                 style: TextStyle(
                   fontSize: 32, 
                   fontWeight: FontWeight.bold,
@@ -33,14 +33,14 @@ class TelaInicial extends StatelessWidget {
                 ),
               ),
               const Text(
-                'O seu companheiro de saúde e bem-estar',
+                "O seu companheiro de saúde e bem-estar",
                 style: TextStyle(color: Colors.grey, fontSize: 16),
               ),
               const SizedBox(height: 40),
               TextField(
                 controller: nomeInput,
                 decoration: const InputDecoration(
-                  labelText: 'Digite seu nome',
+                  labelText: "Digite seu nome",
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(Icons.person),
                 ),
@@ -60,7 +60,7 @@ class TelaInicial extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => const MainNavegacaoView()), 
                   );
                 },
-                child: const Text('Começar', style: TextStyle(fontSize: 18, color: Colors.white)),
+                child: const Text("Começar", style: TextStyle(fontSize: 18, color: Colors.white)),
               ),
             ],
           ),

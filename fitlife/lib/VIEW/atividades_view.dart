@@ -23,18 +23,19 @@ class AtividadesView extends StatelessWidget {
                 labelColor: Colors.white,
                 unselectedLabelColor: Colors.white60,
                 tabs: [
-                  Tab(text: 'Pendentes', icon: Icon(Icons.pending_actions)),
-                  Tab(text: 'Concluídas', icon: Icon(Icons.check_circle)),
+                  Tab(text: "Pendentes", icon: Icon(Icons.pending_actions)),
+                  Tab(text: "Concluídas", icon: Icon(Icons.check_circle)),
                 ],
               ),
             ],
           ),
         ),
+        //nessa parte vamos mostrar as atividades pendentes e concluidas
         body: Consumer<FitnessController>(
           builder: (context, controller, child) {
             return TabBarView(
               children: [
-                // Aba 1: Atividades Pendentes
+                //Atividades Pendentes
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
@@ -120,7 +121,7 @@ class AtividadesView extends StatelessWidget {
                   ),
                 ),
 
-                // Aba 2: Atividades Concluídas
+                // Atividades Concluídas
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: controller.atividadesConcluidas.isEmpty

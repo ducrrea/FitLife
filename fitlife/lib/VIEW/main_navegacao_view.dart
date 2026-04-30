@@ -16,13 +16,15 @@ class MainNavegacaoView extends StatelessWidget {
     ConfiguracoesView(),
   ];
 
+// aqui vamos fazer a navegação principal do app, que vai ser controlada por um BottomNavigationBar. O usuário vai poder alternar entre as telas de Dashboard, Atividades e Configurações. O AppBar vai mostrar uma saudação personalizada com o nome do usuário, e o Drawer vai conter opções para acessar as mesmas telas, além de uma opção para sair do app. A navegação deve ser fluida e intuitiva, garantindo que o usuário possa acessar facilmente todas as funcionalidades do FitLife.
   @override
   Widget build(BuildContext context) {
     var controller = Provider.of<FitnessController>(context);
 
+// aqui vamos construir a estrutura principal do app, com um Scaffold que contém um AppBar, um Drawer para navegação lateral, o corpo que exibe a tela atual com base no índice selecionado e um BottomNavigationBar para alternar entre as telas. O AppBar vai mostrar uma saudação personalizada usando o nome do usuário, e o Drawer vai conter opções para acessar as mesmas telas do BottomNavigationBar, além de uma opção para sair do app. A navegação deve ser fluida e intuitiva, garantindo que o usuário possa acessar facilmente todas as funcionalidades do FitLife.
     return Scaffold(
       appBar: AppBar(
-        title: Text('FitLife — Bem-vindo(a), ${controller.nomeUsuario}'),
+        title: Text("FitLife — Bem-vindo(a), ${controller.nomeUsuario}"),
         centerTitle: true,
       ),
       drawer: Drawer(
@@ -38,7 +40,7 @@ class MainNavegacaoView extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.dashboard),
-              title: const Text('Dashboard'),
+              title: const Text("Dashboard"),
               onTap: () {
                 controller.setIndex(0);
                 Navigator.pop(context);
@@ -46,7 +48,7 @@ class MainNavegacaoView extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.directions_run),
-              title: const Text('Atividades'),
+              title: const Text("Atividades"),
               onTap: () {
                 controller.setIndex(1);
                 Navigator.pop(context);
@@ -54,7 +56,7 @@ class MainNavegacaoView extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.settings),
-              title: const Text('Configurações'),
+              title: const Text("Configurações"),
               onTap: () {
                 controller.setIndex(2);
                 Navigator.pop(context);
@@ -63,7 +65,7 @@ class MainNavegacaoView extends StatelessWidget {
             const Divider(),
             ListTile(
               leading: const Icon(Icons.logout, color: Colors.red),
-              title: const Text('Sair'),
+              title: const Text("Sair"),
               onTap: () {
                 Navigator.pushReplacement(
                   context,
@@ -74,6 +76,8 @@ class MainNavegacaoView extends StatelessWidget {
           ],
         ),
       ),
+
+      // aqui vamos mostrar a tela atual
       body: _telas[controller.currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: controller.currentIndex,

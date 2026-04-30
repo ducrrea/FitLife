@@ -40,3 +40,6 @@ Abaixo são descritas as regras que regem o comportamento da aplicação:
 * **01 (Cálculo de Calorias):** O sistema calcula as calorias apenas para as atividades que estão concluídas.
 * **02 (Meta Semanal):** A meta é baseada na proporção de tarefas concluídas em relação ao total, exibindo o percentual atingido.
 * **03 (Restrição de Entrada):** O cadastro de nova atividade exige a definição de título, calorias e tempo de duração (em horas).
+
+## 6. Protótipo
+https://www.figma.com/design/FSmItpgktW1PQTqueLuCPS/Widget-Inicial-Flutter--c%C3%B3pia---c%C3%B3pia-?node-id=0-1&t=Fyk1apmxCoGzlmmh-1

@@ -10,6 +10,7 @@ class ConfiguracoesView extends StatelessWidget {
     final TextEditingController nomeController = TextEditingController();
     final TextEditingController metaController = TextEditingController();
 
+// nessa parte vamos mostrar as configurações do app, como o modo escuro, nome do usuário e meta semanal
     return Scaffold(
       body: Consumer<FitnessController>(
         builder: (context, controller, child) {

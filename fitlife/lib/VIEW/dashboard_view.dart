@@ -5,6 +5,7 @@ import 'package:fitlife/CONTROLLER/fit_controller.dart';
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
 
+// aqui vamos fazer o dashboard do app, mostrando as principais métricas de desempenho do usuário, como atividades concluídas, calorias queimadas, tempo gasto e progresso em relação à meta semanal. Vamos usar um GridView para organizar essas informações de forma visualmente atraente e fácil de entender. Cada métrica será apresentada em um card com um ícone representativo, o valor atual e uma breve descrição. O objetivo é fornecer ao usuário uma visão geral rápida do seu progresso e motivá-lo a continuar se esforçando para alcançar seus objetivos de fitness.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,6 +56,7 @@ class DashboardView extends StatelessWidget {
     );
   }
 
+//aqui vamos fazer o card do dashboard, que vai ser usado para mostrar as métricas de desempenho do usuário. O card vai ter um título, um valor, um ícone e uma cor de destaque. O título vai descrever a métrica (ex: "Atividades Concluídas"), o valor vai mostrar o número ou a porcentagem correspondente, o ícone vai representar visualmente a métrica (ex: um check para atividades concluídas) e a cor de destaque vai ajudar a diferenciar cada métrica e tornar o dashboard mais atraente visualmente.
   Widget _buildCardDashboard({
     required String titulo,
     required String value,

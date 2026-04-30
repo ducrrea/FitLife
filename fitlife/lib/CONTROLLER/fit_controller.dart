@@ -39,7 +39,7 @@ class FitnessController extends ChangeNotifier {
   // armazenar atividades
   final List<Atividade> _atividades = [
     Atividade(titulo: "Caminhada", calorias: 150, tempoGasto: 0.5),
-    Atividade(titulo: "Corrida", calorias: 300, tempoGasto: 0.75),
+    Atividade(titulo: "Corrida", calorias: 300, tempoGasto: 1.0),
     Atividade(titulo: "Treino de Musculação", calorias: 250, tempoGasto: 1.0),
     Atividade(titulo: "Yoga", calorias: 120, tempoGasto: 0.5),
   ];
