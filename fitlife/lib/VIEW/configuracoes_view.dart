@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:fitlife/CONTROLLER/fit_controller.dart';
 
+//essa parte toda é para criar a tela de configurações do app, onde o usuário pode alterar o nome, a meta semanal e resetar o progresso. Também tem a opção de ativar ou desativar o modo escuro.
 class ConfiguracoesView extends StatelessWidget {
   const ConfiguracoesView({super.key});
 

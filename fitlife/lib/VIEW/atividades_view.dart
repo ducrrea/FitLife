@@ -110,7 +110,7 @@ class AtividadesView extends StatelessWidget {
                                         style: const TextStyle(fontWeight: FontWeight.bold),
                                       ),
                                       subtitle: Text(
-                                        'Calorias: ${atividade.calorias} kcal • Tempo: ${atividade.tempoGasto}h',
+                                        "Calorias: ${atividade.calorias} kcal • Tempo: ${atividade.tempoGasto}h",
                                       ),
                                     ),
                                   );
@@ -121,7 +121,7 @@ class AtividadesView extends StatelessWidget {
                   ),
                 ),
 
-                // Atividades Concluídas
+                // essa parte é a outra pagina que criei na mesma tela para mostrar as atividades concluidas, onde o usuário pode ver o que já fez e desfazer caso queira.
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: controller.atividadesConcluidas.isEmpty
@@ -144,7 +144,7 @@ class AtividadesView extends StatelessWidget {
                                   ),
                                 ),
                                 subtitle: Text(
-                                  'Calorias: ${atividade.calorias} kcal • Tempo: ${atividade.tempoGasto}h',
+                                  "Calorias: ${atividade.calorias} kcal • Tempo: ${atividade.tempoGasto}h",
                                 ),
                                 trailing: IconButton(
                                   icon: const Icon(Icons.undo, color: Colors.orange),
